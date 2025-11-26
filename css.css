@@ -1,1 +1,12 @@
-ola buenos dias
+div.rojo{
+    background-color: darkred;
+    position: relative;
+    width: 50px;
+    float: left;
+}
+div.rojo{
+    background-color: black;
+    position: relative;
+    width: 50px;
+    float: right;
+}
