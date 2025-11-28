@@ -1,12 +1,162 @@
+/*Fondo*/
+body {
+    margin: 0; 
+    padding: 0; 
+}
 div.rojo{
     background-color: darkred;
     position: relative;
-    width: 50px;
+    height: 1000px;
+    width: 100%;
     float: left;
 }
-div.rojo{
+div.negro{
     background-color: black;
     position: relative;
-    width: 50px;
-    float: right;
+    width: 50%;
+    height: 1000px;
+    float: left;
 }
+/*logo*/
+.logo {
+    background-image: url("marvel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    /* Tamaño */
+    width: 300px;
+    height: 150px; 
+    position: absolute; 
+    top: -15px;      
+    left: 690px;
+}
+/*titulo*/
+@font-face{
+    font-family: "titulo";
+    src: url(fuentes/Action\ Comics.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+.titulo{
+    font-family: "titulo";
+    font-weight: bold;
+}
+div.titulo{
+    font-size: 120px; 
+    font-weight: bold;
+    text-align: center;
+    position: absolute; 
+    z-index: 3;
+    top: 60px;
+    width: 100%;     
+    color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(205, 193, 28, 0.603); /* Sombra negra para darle contorno */
+    background-color: rgb(222, 222, 222);
+}
+/*Botones*/
+/*fuente de boton*/
+@font-face{
+    font-family: "boton";
+    src: url(fuentes/Bazinga-RegularItalic.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+.boton{
+    font-family: "boton";
+    font-weight: bold;
+}
+.boton {
+    background-color: rgb(165, 14, 14);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Posiciones y Tamaño*/
+    width: 300px;
+    height: 50px;
+    border: 5px solid rgb(73, 13, 13);
+    position: absolute;
+    left: 515px;
+    font-style: italic;
+    text-decoration: none;
+    text-align: center;
+    z-index: 2;
+}
+/* Posiciones individuales */
+.boton1 { top: 450px;}
+.boton1_1 { top: 550px;}
+.boton1_2 { top: 650px;}
+/* EFECTOS */
+.boton:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 30px rgb(255, 0, 0); /* Sombra */
+    cursor: pointer;
+}
+.boton:active {
+    background-color: #ff0000;
+    transform: translateY(5px); /* Efecto de hundimiento */
+}
+/*boton negro*/
+@font-face{
+    font-family: "boto";
+    src: url(fuentes/Bazinga-RegularItalic.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+.boto{
+    font-family: "boto";
+    font-weight: bold;
+}
+.boto {
+    background-color: rgb(165, 14, 14);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Posiciones y Tamaño*/
+    width: 300px;
+    height: 50px;
+    border: 5px solid rgb(73, 13, 13);
+    position: absolute;
+    left: 850px;
+    font-style: italic;
+    text-decoration: none;
+    text-align: center;
+    z-index: 2;
+}
+/* Posiciones individuales */
+.boton2 { top: 450px;}
+.boton2_1 { top: 550px;}
+.boton2_2 { top: 650px;}
+/* EFECTOS */
+.boto:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 30px rgb(255, 0, 0); /* Sombra */
+    cursor: pointer;
+}
+.boto:active {
+    background-color: #ff0000;
+    transform: translateY(5px); /* Efecto de hundimiento */
+}
+.deadpool {
+    position: relative;
+    height: 900px;
+    width: 100%;
+}
+
+.deadpool img {
+    width: 200%;
+    height: 630px;
+    object-fit: cover; /* no deforme */
+}
+
+#deadpool4 {
+    position: absolute; 
+    top: 372px;
+    left: 0px;
+    z-index: 0;
+}
+
